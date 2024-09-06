@@ -1,0 +1,165 @@
+/* Estilos generales */
+html, body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(2, 2, 2), rgb(47, 47, 47) 60%, rgb(90, 89, 89) 70%, rgb(150, 150, 150));
+    color: #fff;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+/* Estilos del nav */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    background: black;
+    border-radius: 100px;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-left: 45px;
+}
+
+nav ul li a {
+    color: white;
+    font-family: "Space Mono", monospace;
+    text-decoration: none;
+}
+
+/* Logo y animación */
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 120px;
+}
+
+@keyframes moveLogo {
+    0% { transform: translateX(-50%); }
+    50% { transform: translateX(50%); }
+    100% { transform: translateX(-50%); }
+}
+
+.logo {
+    width: 500px;
+    height: 400px;
+    max-width: 50%;
+    height: auto;
+    animation: moveLogo 10s infinite linear;
+}
+
+/* Sección menú */
+section.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    font-size: 50px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilos de los productos */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-box, .product-boxpostre {
+    background-color: #120000;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(9, 55, 163, 0.1);
+    text-align: center;
+}
+
+.product-box {
+    width: calc(33.333% - 20px);
+}
+
+.product-boxpostre {
+    width: calc(50% - 20px);
+}
+
+.product-box button, .product-boxpostre button {
+    background: rgb(4, 100, 159);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: rgba(20, 144, 215, 0.245);
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.product-box button:hover, .product-boxpostre button:hover {
+    background: rgba(5, 123, 192, 0.245);
+    box-shadow: 0 6px 20px rgba(1, 61, 94, 0.481);
+    transform: translateY(-2px);
+}
+
+/* Sección "Sobre Nosotros" y "Contacto" */
+section.sobrenosotros, section.contacto {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Títulos de las secciones */
+#sobrenosotros, #titlecontacto {
+    font-size: 40px; /* Aumenta el tamaño de los títulos */
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilos adicionales */
+h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    margin: 20px 0;
+}
+
+
+a[href^="mailto:"] {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.785); /* Ajusta el color según tu diseño */
+}
+
